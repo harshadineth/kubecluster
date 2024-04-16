@@ -1,0 +1,19 @@
+[configure]
+192.168.1.26
+192.168.1.27
+
+
+[master]
+192.168.1.26
+
+[worker]
+192.168.1.27
+
+[ansible]
+localhost ansible_connection=local
+
+[configure:vars]
+ansible_connection=ssh
+ansible_user=harsha
+ansible_ssh_pass=root
+
